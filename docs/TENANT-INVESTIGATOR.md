@@ -7,8 +7,8 @@ Use Tenant Investigator to check **current observability**: tenant identity, pro
 ## Install / start
 
 1. Open the approved internal Grafana in Chrome and authenticate.
-2. Open [`index.html`](../index.html) and click **Copy Grafana launcher**, or open the [original rc.7 installer](releases/v1.0.0-rc.7/cortex-tac-investigator-v1.0.0-rc.7-installer.html).
-3. In the Grafana tab open DevTools Console: Mac `⌥⌘J`, Windows/Linux `Ctrl+Shift+J`; paste and run once. This is **not a bookmarklet**.
+2. Open [`index.html`](../index.html) and click **Copy JS**, or open the [standalone JavaScript](../tenant-investigator-grafana/tenant-investigator.js).
+3. In the Grafana tab open DevTools Console: Mac `⌥⌘J`, Windows/Linux `Ctrl+Shift+J`; paste and run once. For large launchers, Direct JS is the recommended method; bookmarklet support varies by Chrome policy.
 4. The launcher performs local checks without Grafana data queries. Search by LCAAS, Cortex/XDR ID, project/tenant ID or support account ID.
 5. A single verified tenant can auto-run after the necessary regional lookups succeed; for multiple matches use **Run Investigation** on exactly one row. All actions remain restricted to the current authorized session and tenant/datasource binding.
 6. Review the Overview and diagnostics; use arrows for Grafana Explore evidence; copy the Overview or download a restricted offline HTML report.
@@ -29,10 +29,15 @@ Use Tenant Investigator to check **current observability**: tenant identity, pro
 - Report values reflect a point in time; tenant health may change on a later run.
 - If a region is inaccessible, missing or fails lookup, the UI must show the actual condition rather than pretending no tenant exists.
 
-## Status
+## Version
 
-rc.7 has offline test evidence reported as **520/520 Node tests**, but final production acceptance is pending live browser checks for the intended regional rollout. Do not describe rc.7 as a signed global production release.
+**Cortex TAC Tenant Investigator · Version 1.0.0.0.** Use the latest installer in `releases/v1.0.0.0/`. For deployment and permission issues, follow the team's standard support process.
 
 
 ## Shared portal installation
-Select **Grafana** in `index.html`. The **Direct JS** tab mirrors the approved rc.7 installer. A draggable bookmarklet is offered for convenience but is not an approved/validated substitute until its long bookmark URL has been tested in Chrome. If it fails, use **Direct JS**.
+Select **Grafana** in `index.html`. The **Direct JS** tab provides the same JavaScript as the included v1.0.0.0 installer. A draggable bookmarklet is offered for convenience but may be blocked or truncated in some managed Chrome configurations. If it fails, use **Direct JS**.
+
+## Distribution files
+
+- [`tenant-investigator.js`](../tenant-investigator-grafana/tenant-investigator.js) — run from an authenticated Grafana DevTools Snippet or Console.
+- [`tenant-investigator.bookmarklet.txt`](../tenant-investigator-grafana/tenant-investigator.bookmarklet.txt) — optional bookmark URL, very large and not guaranteed to work in managed Chrome.

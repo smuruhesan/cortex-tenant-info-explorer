@@ -21,8 +21,8 @@
 - Publish only verified tool binaries and human-reviewed documentation in an approved **private** internal repo.
 - Do not commit tenant reports, exports, raw Grafana results, Slack snapshots, CLCS associations, access tokens, passwords, cookies or sensitive API credentials.
 - Do not use public cloud CDNs or npm dependencies in the installation portal; it is intentionally self-contained.
-- Retain SHA-256 checks and immutable version folders. Rebuild only from approved source, not by editing minified bundles in place.
-- Conduct live acceptance before changing release candidate status to production.
+- Retain SHA-256 checks and immutable version folders. For subsequent signed releases, build version metadata from the authoritative source and rerun the full test suite; this distribution was packaged from supplied compiled assets.
+- Test installation and relevant regional workflows in managed Chrome before a wider rollout.
 
 ## Access escalation
 

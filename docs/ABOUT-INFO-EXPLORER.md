@@ -14,12 +14,12 @@ Use About Info Explorer for **who / configured what / desired-state** questions,
 
 1. Open `../index.html` from the repository in Chrome and show the Bookmarks bar (Mac: `⌘⇧B`; Windows: `Ctrl+Shift+B`).
 2. Drag **About Info Explorer** from the installation page onto the bar. Some browser policies reject large JavaScript bookmarklets.
-3. If drag fails, add a bookmark manually named `About Info Explorer`. Use **Copy bookmarklet** from the portal and paste the exact text (starts with `javascript:`) in the bookmark's URL field.
+3. If drag fails, add a bookmark manually named `About Info Explorer`. Use **Copy Bookmark URL** from the portal and paste the exact text (starts with `javascript:`) in the bookmark's URL field.
 4. While signed in to the internal GitLab tab, click the bookmarklet.
 
 ## Alternative: DevTools console
 
-Choose **Copy console code** from `index.html` (or open `about-info-explorer-v23-Fixes-console.js`) and paste it into DevTools on the authenticated GitLab tab. The console version deliberately omits the `javascript:` prefix. Follow company DevTools policies.
+Choose **Copy JS** from `index.html` (or open [`about-info-explorer.js`](../about-info-explorer-gitlab/about-info-explorer.js)) and paste it into DevTools on the authenticated GitLab tab. The console version deliberately omits the `javascript:` prefix. Follow company DevTools policies.
 
 ## Usage
 

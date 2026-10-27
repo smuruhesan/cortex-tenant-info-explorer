@@ -1,17 +1,19 @@
-# Versions and Release Status
+# Version and Release Information
 
-| Component | Version in supplied material | Confidence / status |
+**Cortex TAC Tenant Info Explorer — Version 1.0.0.0**
+
+| Component | Team distribution version | Host |
 |---|---|---|
-| About Info Explorer | `v23-Fixes` | Existing GitLab bookmarklet, syntax checked, not live tested by this packaging process; security review noted |
-| Tenant Investigator | `v1.0.0-rc.7` | Internal TAC Global Release Candidate; 520/520 Node tests per development handoff; selected live regional testing and final production approval pending |
-| Query Launcher | separate Marvel workstream | Not bundled in this repository |
+| About Info Explorer | 1.0.0.0 | GitLab |
+| Tenant Investigator | 1.0.0.0 | Grafana |
 
-## Files
+This package gives the team one installer page, independent tools and their respective user guides. It does not include the separate Query Launcher for Marvel.
 
-**About Info:** original bookmarklet SHA-256 `93456b693f0e7c930c826efec8a7c0c570baad3deb9f378c124dc7903eaaf852`. Console `.js` has the same code minus its `javascript:` prefix; the checksum therefore differs.
+## Packaging integrity
 
-**Grafana launcher:** original SHA-256 `92c14bab34455e967f52340b5e57beaddec48a1d3ea60db75db8e83eb977df0a`. Its original installer embeds the same content.
+- GitLab and Grafana executables have new version strings for the internal distribution. Application search and diagnostics logic was not intentionally changed.
+- The portal embeds the same Grafana launcher bytes as `tenant-investigator-grafana/tenant-investigator.js`; the bookmarklet file contains its URL-encoded form. There is no separate installer HTML in this simplified repository.
+- `SHA256SUMS` covers the four executable/bookmarklet files, the portal and documentation.
+- No customer reports or raw Grafana telemetry are included.
 
-No raw tenant HTML report or response bodies are included. The attached rc.7 Indonesia report was used only to confirm the report metadata and behavior (not to populate sample identities in this package).
-
-Before renaming rc.7 as production, execute real Chrome acceptance for each region supported in your deployment, verify regional datasource routing, report evidence, CLCS semantics, download and offline viewing, and complete corporate security review.
+**Engineering release note:** Version labels were updated in the supplied compiled assets rather than rebuilt from the full original source workspace. Existing development regression results therefore do not independently certify the repackaged bytes. Release owners should confirm runtime acceptance on their managed Chrome/Grafana/GitLab environment and, for a formally signed build, regenerate this version from the authoritative source repository.

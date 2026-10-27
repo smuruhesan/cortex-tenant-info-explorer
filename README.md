@@ -1,22 +1,52 @@
 # Cortex TAC Tenant Info Explorer
 
-Private internal Cortex TAC installer repository for two independent tools.
+**Version 1.0.0.0 · Internal Cortex TAC team**
 
-## Start here
+Open **[index.html](index.html)** to choose the **GitLab About Info Explorer** or **Grafana Tenant Investigator**. Each tool has a Bookmark Install tab, a Direct JS tab, and More Info. The HTML portal does not run either tool or query a tenant when opened.
 
-Open **index.html**. The first screen has only **GitLab** and **Grafana** selections and a concise comparison. Select a tool to view its bookmark installation, Direct JS, and More Info tabs. No Grafana or GitLab requests are sent by the portal itself.
+## Which tool should I use?
 
-| Tool | Use it for | Access |
+| Tool | When to use | Access |
 |---|---|---|
-| **About Info Explorer** (GitLab, v23-Fixes) | Customer identity, desired-state tenant configuration, licences, modules and deployment details | GitLab access; otherwise contact a Cortex TAC SME |
-| **Tenant Investigator** (Grafana, rc.7) | Read-only telemetry and diagnostic investigation, CLCS identifiers, links and offline reports | Authorized Grafana access; rc.7 live acceptance still pending |
+| **About Info Explorer (GitLab)** | Identify customers and inspect configured tenant/licence/module/image/deployment information | GitLab project access required; otherwise contact a **Cortex TAC SME** |
+| **Tenant Investigator (Grafana)** | Discover tenants and inspect operational metrics, CLCS identifiers, health diagnostics, source queries and offline reports | Authorized Grafana access |
 
-### Install
+The tools are independent. Do not paste one tool's code into the other application's website. **The Query Launcher is a separate Marvel workstream and is not included here.**
 
-Select GitLab or Grafana, then choose **Bookmark Install** (drag the button to Chrome bookmarks) or **Direct JS** (Copy JS/Download JS and run in Chrome DevTools Sources → Snippets). The supplied rc.7 Grafana installer officially documents the Direct JS route. The optional Grafana bookmarklet may be limited by Chrome's maximum bookmark-URL size or company browser policy and has not been independently proven in live Chrome.
+## Minimal repository layout
 
-For individual instructions read [GitLab user guide](about-info-explorer/USER-GUIDE.md) and [Grafana user guide](tenant-investigator/USER-GUIDE.md). See [Security and Access](docs/SECURITY-AND-ACCESS.md), [Release Status](docs/RELEASE-STATUS.md) and [Publishing Checklist](docs/PUBLISHING-CHECKLIST.md).
+```text
+cortex-tac-tenant-info-explorer/
+├── index.html
+├── README.md
+├── SHA256SUMS
+├── about-info-explorer-gitlab/
+│   ├── about-info-explorer.js
+│   └── about-info-explorer.bookmarklet.txt
+├── tenant-investigator-grafana/
+│   ├── tenant-investigator.js
+│   └── tenant-investigator.bookmarklet.txt
+└── docs/
+    ├── ABOUT-INFO-EXPLORER.md
+    ├── TENANT-INVESTIGATOR.md
+    ├── SECURITY-AND-ACCESS.md
+    ├── TROUBLESHOOTING.md
+    ├── RELEASE-STATUS.md
+    └── PUBLISHING-CHECKLIST.md
+```
 
-All tool JS files are preserved byte-for-byte from the supplied artifacts. The launcher SHA256 is `92c14bab34455e967f52340b5e57beaddec48a1d3ea60db75db8e83eb977df0a`. The portal is self-contained and uses no remote CSS or JS.
+- The `.js` files are the executable console/DevTools scripts. Direct links: [GitLab JavaScript](about-info-explorer-gitlab/about-info-explorer.js) and [Grafana JavaScript](tenant-investigator-grafana/tenant-investigator.js).
+- The `.bookmarklet.txt` files contain complete `javascript:` bookmark URLs; paste the whole string into a browser bookmark's URL field if drag-and-drop is unavailable.
+- The **Grafana bookmarklet is very large (~655 KB)** and may be blocked or truncated by managed Chrome. For Grafana, **Direct JS / DevTools Snippets is the reliable path**.
+- `index.html` contains script payloads for **offline installation**, so its Copy/Download buttons still work when opened directly from a downloaded folder. The four tool files are kept separately for version control and direct use. When changing a tool script later, also regenerate the corresponding portal payload and bookmarklet file to avoid drift.
+- Do not commit raw tenant reports, Grafana query responses, customer identifiers, tokens or secrets.
 
-**IMPORTANT:** Internal-use only. Do not commit live tenant reports or raw metrics to the repository. GitLab's external YAML-library loading must be reviewed against company policy before wide release. The Cortex TAC Query Launcher is separate and intended for Marvel integration.
+## How to publish
+
+Use an approved private internal GitHub repository. Open or download `index.html` from that repository; ordinary GitHub file previews are not a substitute for hosting the interactive page. For security and integrity checks, read [Publishing Checklist](docs/PUBLISHING-CHECKLIST.md) and [Security and Access](docs/SECURITY-AND-ACCESS.md).
+
+From the repository root, verify the published files with:
+
+```bash
+shasum -a 256 -c SHA256SUMS
+```
