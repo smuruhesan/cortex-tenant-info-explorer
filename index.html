@@ -17,6 +17,36 @@ h1{font-size:clamp(27px,4vw,36px);line-height:1.16;letter-spacing:-.036em;margin
 .tabs{display:flex;gap:9px;border-bottom:1px solid var(--line);padding-bottom:12px;margin:8px 0 19px;flex-wrap:wrap}.tab{border:1px solid #b9dacc;background:#fff;color:#214537;padding:9px 15px;border-radius:9px;font-size:13px;font-weight:750}.tab.active,.tab[aria-selected="true"]{background:var(--green);color:white;border-color:var(--green)}.tab:hover:not(.active){background:#f0faf4}.install-panel h2{font-size:18px}.dropzone{background:#f0faf4;border:1px dashed #77bea1;border-radius:15px;text-align:center;padding:24px 14px 21px;margin:0 0 22px}.dropzone .mini-title{font-size:12px;color:#547565;font-weight:700;letter-spacing:.03em;margin:0 0 12px}.bookmark{display:inline-flex;padding:13px 24px;border-radius:10px;background:var(--green);color:white;text-decoration:none;font-weight:850;box-shadow:0 6px 17px #04996430;max-width:100%}.bookmark:hover{background:var(--green-dark);color:#fff;text-decoration:none}.hint{font-size:12px;color:#60786d;margin:10px 0 0}.steps{list-style:none;counter-reset:n;margin:14px 0 0;padding:0;display:grid;gap:14px}.steps li{counter-increment:n;display:grid;grid-template-columns:31px 1fr;gap:12px;align-items:start}.steps li:before{content:counter(n);display:grid;place-items:center;background:#e8f6ef;border-radius:50%;font-size:12px;font-weight:800;color:#087951;height:29px;width:29px}.steps strong{font-size:14px;display:block;margin:-1px 0 1px}.steps span{color:var(--muted);font-size:13px}.steps code,.small-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#f1f5f3;padding:2px 5px;border-radius:5px;color:#255546;font-size:12px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:10px 0}.action{border:1px solid #b8d9c9;background:#fff;color:#235844;font-size:13px;font-weight:750;border-radius:9px;padding:10px 13px}.action.primary{background:var(--green);border-color:var(--green);color:white}.action:hover{filter:brightness(.96)}.note{background:#fbfaf5;border-left:3px solid #d8aa59;padding:10px 13px;margin:18px 0 0;color:#745526;font-size:12px}.note.neutral{background:#f6f9f7;border-color:#88b69e;color:#4b6a5b}.learn{border:1px solid var(--line);background:#fbfefb;border-radius:11px;padding:11px 14px;margin-top:20px}.learn summary{font-size:13px;font-weight:750;cursor:pointer}.learn .actions{margin:13px 0 2px}.help-copy{color:var(--muted);font-size:13px;margin:8px 0}.more-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:13px 0}.info-card{border:1px solid var(--line);padding:15px;background:#fbfefc;border-radius:12px}.info-card p{font-size:13px;color:var(--muted);margin:4px 0}.info-card strong{font-size:13px}.micro{font-size:12px;color:#667e71}.status{min-height:22px;font-size:12px;color:#087c50;font-weight:750;margin:5px 0}.inline-link{font-size:13px;font-weight:750}.help-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}.summary-title{font-size:13px;font-weight:800;margin-top:22px}.security{font-size:12px;color:#6e796f;margin-top:20px}.divider{height:1px;background:var(--line);margin:20px 0}
 .modal{position:fixed;inset:0;background:#10251bc2;display:grid;place-items:center;z-index:20;padding:16px}.modal-inner{max-width:720px;width:100%;background:white;border-radius:14px;padding:20px;box-shadow:0 22px 70px #13291b50}.modal-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.modal textarea{width:100%;height:190px;border:1px solid var(--line);border-radius:9px;padding:12px;font:11px/1.35 ui-monospace,Consolas,monospace;resize:vertical}.modal .close{border:0;background:#eef5f0;border-radius:7px;padding:7px 10px}
 @media(max-width:670px){.shell{margin:14px auto;padding:0 9px 18px}.sheet{padding:22px 19px;border-radius:15px}.choice-grid,.compare-grid,.more-grid{grid-template-columns:1fr}.choice{min-height:88px;padding:17px}.tool-header{display:block}.tag{display:inline-block;margin-top:10px}.footer{display:block}.footer span{display:block;margin-bottom:5px}}
+
+/* Self-contained comparison; no GitHub/README fetch required. */
+.compare{border-top:1px solid var(--line);padding-top:23px;margin-top:8px}
+.compare-heading{margin-bottom:14px}
+.compare-heading h2{font-size:20px;margin:0 0 5px}
+.compare-heading p{font-size:13px;color:var(--muted);margin:0}
+.compare-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:19px}
+.compare-point{background:#f8fcf9;border:1px solid #dfebe3;padding:12px 15px;border-radius:11px}
+.compare-point strong{font-size:13px;color:#234b38}
+.compare-point p{font-size:12px;color:var(--muted);margin:4px 0 0;line-height:1.55}
+.compare-section-title{font-size:14px;font-weight:800;margin:0 0 9px}
+.compare-table-wrap{border:1px solid #dbe9e0;border-radius:11px;overflow-x:auto;background:#fff}
+.compare-table{border-collapse:collapse;width:100%;font-size:13px;table-layout:fixed;line-height:1.45}
+.compare-table th{background:#f3f9f5;color:#224a39;padding:10px 12px;font-size:12px;font-weight:800;text-align:left;border-bottom:1px solid #dbe9e0}
+.compare-table th:first-child{width:40%}
+.compare-table th:not(:first-child),.compare-table td:not(:first-child){width:30%;text-align:center}
+.compare-table td{padding:9px 12px;border-bottom:1px solid #ebf2ed;color:#3d5949;vertical-align:middle}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tbody tr:nth-child(even){background:#fbfdfb}
+.compare-table td:first-child{color:#1c3e30;font-weight:600}
+.compare-yes{font-weight:800;color:#087e54}
+.compare-no{color:#8a9891;font-weight:700}
+.compare-limited{color:#586c61;font-size:12px}
+.compare-note{font-size:11.5px;line-height:1.5;color:#5e766a;margin:9px 1px 0}
+.compare-details{margin-top:16px;border:1px solid #dbe9e0;border-radius:11px;background:#fcfefc;padding:12px 13px}
+.compare-details summary{font-size:13px;font-weight:800;cursor:pointer;color:#116d4e}
+.compare-details summary:hover{text-decoration:underline}
+.compare-details[open] summary{margin-bottom:12px}
+.compare-access{font-size:12px;color:#60786a;margin:12px 1px 0}
+@media(max-width:670px){.compare-points{grid-template-columns:1fr}.compare-table{font-size:12px}.compare-table th:first-child{width:42%}.compare-table th:not(:first-child),.compare-table td:not(:first-child){width:29%}.compare-table th,.compare-table td{padding:9px 6px}.compare-limited{font-size:11px}}
 </style>
 </head>
 <body>
@@ -29,13 +59,51 @@ h1{font-size:clamp(27px,4vw,36px);line-height:1.16;letter-spacing:-.036em;margin
     <button class="choice" type="button" data-choose="gitlab"><span><span class="choice-title">GitLab</span><span class="choice-desc">About Info Explorer · Customer & configuration</span></span><span class="choice-arrow" aria-hidden="true">→</span></button>
     <button class="choice" type="button" data-choose="grafana"><span><span class="choice-title">Grafana</span><span class="choice-desc">Tenant Investigator · Metrics & diagnostics</span></span><span class="choice-arrow" aria-hidden="true">→</span></button>
   </div>
-  <div class="compare">
-    <p class="compare-head">Which one should I use?</p>
-    <div class="compare-grid">
-      <div class="compare-box"><strong>GitLab · About Info Explorer</strong><p>Find out who the customer is and how the tenant is configured.</p><div class="meta">Configuration · Licences · Modules · Images</div></div>
-      <div class="compare-box"><strong>Grafana · Tenant Investigator</strong><p>Find out what's happening with the tenant using metrics and diagnostic evidence.</p><div class="meta">Health · CLCS · Versions · Grafana evidence</div></div>
+  <section class="compare" aria-labelledby="compare-title">
+    <div class="compare-heading">
+      <h2 id="compare-title">GitLab vs Grafana — which should I use?</h2>
+      <p>Two complementary tools: one explains how the tenant is <strong>configured</strong>; the other shows what is <strong>observed in Grafana</strong>.</p>
     </div>
-  </div>
+    <div class="compare-points">
+      <div class="compare-point"><strong>GitLab · Configured state</strong><p>Find customers, serial numbers, account-related tenants, configured licences, modules and deployment details.</p></div>
+      <div class="compare-point"><strong>Grafana · Observed state</strong><p>Find tenants by technical IDs, inspect operational metrics and run 49 diagnostics with Grafana evidence.</p></div>
+    </div>
+    <h3 class="compare-section-title" id="search-compare-title">What can I search?</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table" aria-labelledby="search-compare-title">
+        <thead><tr><th scope="col">Search / lookup</th><th scope="col">GitLab</th><th scope="col">Grafana</th></tr></thead>
+        <tbody>
+          <tr><td>Customer / account name</td><td><span class="compare-yes">✓ Yes</span></td><td><span class="compare-no">—</span></td></tr>
+          <tr><td>Serial number</td><td><span class="compare-yes">✓ Yes</span></td><td><span class="compare-no">—</span></td></tr>
+          <tr><td>All configured tenants for an account</td><td><span class="compare-yes">✓ Yes*</span></td><td><span class="compare-no">—</span></td></tr>
+          <tr><td>LCAAS ID</td><td><span class="compare-limited">Config search*</span></td><td><span class="compare-yes">✓ Yes</span></td></tr>
+          <tr><td>Cortex / XDR ID</td><td><span class="compare-limited">Config search*</span></td><td><span class="compare-yes">✓ Yes</span></td></tr>
+          <tr><td>Project / Tenant ID</td><td><span class="compare-limited">Config search*</span></td><td><span class="compare-yes">✓ Yes</span></td></tr>
+          <tr><td>Support Account ID</td><td><span class="compare-limited">Config search*</span></td><td><span class="compare-yes">✓ Yes</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">* GitLab searches repository contents and shows matching configured tenants, subject to available mappings and access. Technical IDs are not separate dedicated search modes. Grafana returns matching observed tenants, not an account-wide configured directory.</p>
+    <details class="compare-details">
+      <summary>What information will I get from each tool?</summary>
+      <div class="compare-table-wrap">
+        <table class="compare-table" aria-label="Information returned by GitLab and Grafana">
+          <thead><tr><th scope="col">Information</th><th scope="col">GitLab · Configured</th><th scope="col">Grafana · Observed</th></tr></thead>
+          <tbody>
+            <tr><td>Customer name</td><td>Account details when available</td><td>May be Redacted at source</td></tr>
+            <tr><td>Tenant inventory</td><td>Matching configured tenants &amp; mappings</td><td>Observed tenant matches</td></tr>
+            <tr><td>Licences / subscriptions</td><td>Configured licence, options &amp; limits</td><td>Telemetry-reported licence / CLCS where available</td></tr>
+            <tr><td>Modules &amp; deployment</td><td>Configured features &amp; deployment data</td><td>Operational signals where available</td></tr>
+            <tr><td>Images / versions</td><td>Configured image tags</td><td>Observed component image tags</td></tr>
+            <tr><td>Live diagnostics</td><td><span class="compare-no">—</span></td><td>49 diagnostic contracts &amp; Grafana evidence</td></tr>
+            <tr><td>Output</td><td>Configuration details / summary</td><td>Offline HTML investigation report</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-note">A missing metric does not prove a feature is absent. Grafana customer names can be masked as “Redacted”; GitLab cannot bypass repository permissions.</p>
+    </details>
+    <p class="compare-access">GitLab access not available? Contact a Cortex TAC SME. Grafana requires your existing authorized access.</p>
+  </section>
 </section>
 <section id="tool" hidden aria-live="off">
   <button class="go-back" id="back" type="button">← Back to tools</button>
