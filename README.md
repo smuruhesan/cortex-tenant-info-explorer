@@ -1,4 +1,4 @@
-# Cortex TAC About infor & Tenant Info Explorer
+# Cortex TAC About info & Tenant Info Explorer
 
 **Version 1.0.0.0 | Internal Cortex TAC Team**
 
