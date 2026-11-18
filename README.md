@@ -11,6 +11,10 @@ Two complementary tools help TAC engineers find customer tenants, understand the
 
 **Quick guidance:** Use GitLab to identify customers and their tenant configurations. Use Grafana to investigate tenant health, metrics, versions, and operational behavior.
 
+
+
+
+
 ---
 
 ## 1. What can I search?
