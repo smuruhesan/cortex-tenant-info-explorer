@@ -40,18 +40,27 @@ The installation page contains **both tools**. Download `index.html` from the re
 
 **Step 1 — Download `index.html`**
 
-![How to download the installer](docs/media/01-Download%20index.html.gif)
+<img src="docs/media/01-Download%20index.html.gif" alt="Download the Cortex TAC index.html installer" width="900">
 
 **Step 2 — Add the bookmarklets to Chrome**
 
-![How to add bookmarklets to Chrome](docs/media/02-Add%20bookmarklets%20to%20browser%20bookmarks%20bar.gif)
+<img src="docs/media/02-Add%20bookmarklets%20to%20browser%20bookmarks%20bar.gif" alt="Add the GitLab and Grafana bookmarklets to Chrome" width="900">
 
 **Step 3 — Run the tool on your authenticated platform**
 
-- **GitLab — About Info Explorer:** [Watch the GitLab walkthrough](docs/media/02-Gitlab-run%20the%20bookmark-demo.mp4)
-- **Grafana — Tenant Investigator:** [Watch the Grafana walkthrough](docs/media/03-Grafana-run%20thebookmark-demo.mp4)
+**GitLab — About Info Explorer**
 
-The two GIFs animate in GitHub's README; the longer MP4 demonstrations open when clicked. Both installation methods are also explained above.
+[Download the full GitLab walkthrough (MP4)](https://github.com/smuruhesan/cortex-tenant-info-explorer/raw/refs/heads/main/docs/media/02-Gitlab-run%20the%20bookmark-demo.mp4)
+
+<!-- Replace this comment with the GitHub video-attachment URL, on its own line, to display an inline player. -->
+
+**Grafana — Tenant Investigator**
+
+[Download the full Grafana walkthrough (MP4)](https://github.com/smuruhesan/cortex-tenant-info-explorer/raw/refs/heads/main/docs/media/03-Grafana-run%20thebookmark-demo.mp4)
+
+<!-- Replace this comment with the GitHub video-attachment URL, on its own line, to display an inline player. -->
+
+The installation GIFs animate automatically. GitHub's repository file viewer does not provide reliable playback for committed MP4 files; the links above download the recordings. To display an inline player, upload each video as a GitHub media attachment and insert its attachment URL on a separate line. Both installation methods are also explained above.
 
 > **Internal-data reminder:** The GitHub repository is public. Publish only sanitized or redacted demonstrations; do not expose customer identities, tenant identifiers, tokens, private configurations or investigation reports.
 
