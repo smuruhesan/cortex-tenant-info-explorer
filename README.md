@@ -60,6 +60,29 @@ These spots are ready for short demonstrations. Save your GIFs under `docs/media
 
 > **Before publishing GIFs:** Use demonstration or redacted data only. Do not expose customer names, tenant IDs, tokens, internal reports, or private configuration values in a public repository.
 
+## Installation — Quick Start
+
+### Step 1 — Download the installer
+
+![How to download index.html](docs/media/01-download-installer.gif)
+
+### Step 2 — Add bookmarklets to Chrome
+
+![How to install bookmarklets](docs/media/02-install-bookmarklets.gif)
+
+### Step 3 — Run the tools
+
+**GitLab — About Info Explorer**
+
+[Watch GitLab walkthrough](docs/media/03-gitlab-demo.mp4)
+
+**Grafana — Tenant Investigator**
+
+[Watch Grafana walkthrough](docs/media/04-grafana-demo.mp4)
+
+For detailed installation methods, refer to the instructions below.
+
+
 ---
 
 ## 2. What can I search?
