@@ -15,7 +15,7 @@ Two complementary tools help TAC engineers find customer tenants, understand the
 
 ## 1. Install the tools — start here
 
-**[Open the installation page (`index.html`)](index.html)**
+*[Open the installation page (`index.html`)](index.html)*
 
 The installation page contains **both tools**. Download `index.html` from the repository and open the downloaded file in **Google Chrome**. You do not need to edit JavaScript to install a bookmarklet.
 
