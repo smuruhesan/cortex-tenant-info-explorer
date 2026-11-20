@@ -40,32 +40,26 @@ The installation page contains **both tools**. Download `index.html` from the re
 
 **Step 1 — Download `index.html`**
 
-<img src="docs/media/01-Download%20index.html.gif" alt="Download the Cortex TAC index.html installer" width="900">
-
-
 https://github.com/user-attachments/assets/49b6a341-a9e4-4254-93b0-62aa0e2ed046
 
 
 
 **Step 2 — Add the bookmarklets to Chrome**
 
-<img src="docs/media/02-Add%20bookmarklets%20to%20browser%20bookmarks%20bar.gif" alt="Add the GitLab and Grafana bookmarklets to Chrome" width="900">
+https://github.com/user-attachments/assets/0a82a4c5-2ae6-4a0e-a944-6ce6c2b9cf87
 
 **Step 3 — Run the tool on your authenticated platform**
 
 **GitLab — About Info Explorer**
 
-[Download the full GitLab walkthrough (MP4)](https://github.com/smuruhesan/cortex-tenant-info-explorer/raw/refs/heads/main/docs/media/02-Gitlab-run%20the%20bookmark-demo.mp4)
+https://github.com/user-attachments/assets/cdff4d4b-cdce-4cb8-b4e4-5365212f74ce
 
-<!-- Replace this comment with the GitHub video-attachment URL, on its own line, to display an inline player. -->
+
 
 **Grafana — Tenant Investigator**
 
-[Download the full Grafana walkthrough (MP4)](https://github.com/smuruhesan/cortex-tenant-info-explorer/raw/refs/heads/main/docs/media/03-Grafana-run%20thebookmark-demo.mp4)
+https://github.com/user-attachments/assets/42b87258-b5e4-4648-a18c-f58baa47b929
 
-<!-- Replace this comment with the GitHub video-attachment URL, on its own line, to display an inline player. -->
-
-The installation GIFs animate automatically. GitHub's repository file viewer does not provide reliable playback for committed MP4 files; the links above download the recordings. To display an inline player, upload each video as a GitHub media attachment and insert its attachment URL on a separate line. Both installation methods are also explained above.
 
 > **Internal-data reminder:** The GitHub repository is public. Publish only sanitized or redacted demonstrations; do not expose customer identities, tenant identifiers, tokens, private configurations or investigation reports.
 
