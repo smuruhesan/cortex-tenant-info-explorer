@@ -15,7 +15,7 @@ Two complementary tools help TAC engineers find customer tenants, understand the
 
 ## 1. Install the tools — start here
 
-*[Open the installation page (`index.html`)](index.html)*
+**[Open the installation page (`index.html`)](index.html)**
 
 The installation page contains **both tools**. Download `index.html` from the repository and open the downloaded file in **Google Chrome**. You do not need to edit JavaScript to install a bookmarklet.
 
@@ -36,52 +36,24 @@ The installation page contains **both tools**. Download `index.html` from the re
 
 > **Access:** The tools run using your existing permissions. If you cannot access the relevant GitLab tenant configuration repository, contact a Cortex TAC SME. If bookmarklets are restricted by your managed browser, use an approved Direct JS method; Grafana's larger script may work more reliably through Direct JS.
 
-### GIF walkthroughs — to be added
+### Installation and usage demonstrations
 
-These spots are ready for short demonstrations. Save your GIFs under `docs/media/` and replace the placeholder text with the image references shown in the comments.
+**Step 1 — Download `index.html`**
 
-**Installing a bookmarklet** — *GIF coming soon.*
+![How to download the installer](docs/media/01-Download%20index.html.gif)
 
-<!-- When ready, replace the line above with:
-![How to install the Cortex TAC bookmarklet in Chrome](docs/media/install-bookmarklet.gif)
--->
+**Step 2 — Add the bookmarklets to Chrome**
 
-**Using About Info Explorer (GitLab)** — *GIF coming soon.*
+![How to add bookmarklets to Chrome](docs/media/02-Add%20bookmarklets%20to%20browser%20bookmarks%20bar.gif)
 
-<!-- When ready, replace the line above with:
-![How to search for a tenant with GitLab About Info Explorer](docs/media/use-gitlab-explorer.gif)
--->
+**Step 3 — Run the tool on your authenticated platform**
 
-**Using Tenant Investigator (Grafana)** — *GIF coming soon.*
+- **GitLab — About Info Explorer:** [Watch the GitLab walkthrough](docs/media/02-Gitlab-run%20the%20bookmark-demo.mp4)
+- **Grafana — Tenant Investigator:** [Watch the Grafana walkthrough](docs/media/03-Grafana-run%20thebookmark-demo.mp4)
 
-<!-- When ready, replace the line above with:
-![How to investigate a tenant with Grafana Tenant Investigator](docs/media/use-grafana-investigator.gif)
--->
+The two GIFs animate in GitHub's README; the longer MP4 demonstrations open when clicked. Both installation methods are also explained above.
 
-> **Before publishing GIFs:** Use demonstration or redacted data only. Do not expose customer names, tenant IDs, tokens, internal reports, or private configuration values in a public repository.
-
-## Installation — Quick Start
-
-### Step 1 — Download the installer
-
-![How to download index.html](docs/media/01-download-installer.gif)
-
-### Step 2 — Add bookmarklets to Chrome
-
-![How to install bookmarklets](docs/media/02-install-bookmarklets.gif)
-
-### Step 3 — Run the tools
-
-**GitLab — About Info Explorer**
-
-[Watch GitLab walkthrough](docs/media/03-gitlab-demo.mp4)
-
-**Grafana — Tenant Investigator**
-
-[Watch Grafana walkthrough](docs/media/04-grafana-demo.mp4)
-
-For detailed installation methods, refer to the instructions below.
-
+> **Internal-data reminder:** The GitHub repository is public. Publish only sanitized or redacted demonstrations; do not expose customer identities, tenant identifiers, tokens, private configurations or investigation reports.
 
 ---
 
