@@ -42,6 +42,11 @@ The installation page contains **both tools**. Download `index.html` from the re
 
 <img src="docs/media/01-Download%20index.html.gif" alt="Download the Cortex TAC index.html installer" width="900">
 
+
+https://github.com/user-attachments/assets/49b6a341-a9e4-4254-93b0-62aa0e2ed046
+
+
+
 **Step 2 — Add the bookmarklets to Chrome**
 
 <img src="docs/media/02-Add%20bookmarklets%20to%20browser%20bookmarks%20bar.gif" alt="Add the GitLab and Grafana bookmarklets to Chrome" width="900">
