@@ -1,6 +1,6 @@
-# Cortex TAC About info & Tenant Info Explorer
+# Cortex TAC About Info & Tenant Info Explorer
 
-**Version 1.0.0.0 | Internal Cortex TAC Team**
+**Internal Cortex TAC Team** · **GitLab v1.1.1.0** · **Grafana v1.0.0.0**
 
 Two complementary tools help TAC engineers find customer tenants, understand their configuration, and investigate operational issues.
 
@@ -11,13 +11,58 @@ Two complementary tools help TAC engineers find customer tenants, understand the
 
 **Quick guidance:** Use GitLab to identify customers and their tenant configurations. Use Grafana to investigate tenant health, metrics, versions, and operational behavior.
 
+---
 
+## 1. Install the tools — start here
 
+**[Open the installation page (`index.html`)](index.html)**
 
+The installation page contains **both tools**. Download `index.html` from the repository and open the downloaded file in **Google Chrome**. You do not need to edit JavaScript to install a bookmarklet.
+
+1. **Open `index.html` in Chrome.** Download the HTML file from the repository first; GitHub's source-code preview is not the installer itself.
+2. **Choose GitLab or Grafana.** Install the tool that matches your investigation.
+3. **Select an installation method:**
+
+   | Method | What to do |
+   |---|---|
+   | **Bookmark Install — recommended** | Show the Chrome bookmarks bar (`⌘ + Shift + B` on Mac or `Ctrl + Shift + B` on Windows). Drag the green button to the bookmarks bar. |
+   | **Direct JS** | Copy or download the JavaScript from the installer and run it as an approved Chrome DevTools snippet on the relevant authenticated page. |
+   | **More Info** | Read the tool's features, limitations, and access instructions. |
+
+4. **Sign in to the appropriate internal platform.** Open your authenticated **GitLab** page for *About Info Explorer* or your authenticated **Grafana** page for *Tenant Investigator*.
+5. **Launch the tool.** Click the saved bookmark while on the corresponding platform page, or run the Direct JS snippet there.
+
+**Chrome bookmark names:** `About Info Explorer - GitLab` and `Tenant Investigator - Grafana`.
+
+> **Access:** The tools run using your existing permissions. If you cannot access the relevant GitLab tenant configuration repository, contact a Cortex TAC SME. If bookmarklets are restricted by your managed browser, use an approved Direct JS method; Grafana's larger script may work more reliably through Direct JS.
+
+### GIF walkthroughs — to be added
+
+These spots are ready for short demonstrations. Save your GIFs under `docs/media/` and replace the placeholder text with the image references shown in the comments.
+
+**Installing a bookmarklet** — *GIF coming soon.*
+
+<!-- When ready, replace the line above with:
+![How to install the Cortex TAC bookmarklet in Chrome](docs/media/install-bookmarklet.gif)
+-->
+
+**Using About Info Explorer (GitLab)** — *GIF coming soon.*
+
+<!-- When ready, replace the line above with:
+![How to search for a tenant with GitLab About Info Explorer](docs/media/use-gitlab-explorer.gif)
+-->
+
+**Using Tenant Investigator (Grafana)** — *GIF coming soon.*
+
+<!-- When ready, replace the line above with:
+![How to investigate a tenant with Grafana Tenant Investigator](docs/media/use-grafana-investigator.gif)
+-->
+
+> **Before publishing GIFs:** Use demonstration or redacted data only. Do not expose customer names, tenant IDs, tokens, internal reports, or private configuration values in a public repository.
 
 ---
 
-## 1. What can I search?
+## 2. What can I search?
 
 This is the most important difference between the two tools.
 
@@ -53,7 +98,7 @@ This is the most important difference between the two tools.
 
 ---
 
-## 2. What information is available in each tool?
+## 3. What information is available in each tool?
 
 ### Configured vs. Running / Observed
 
@@ -94,7 +139,7 @@ A configured value and an observed value may differ. Missing Grafana telemetry s
 
 ---
 
-## 3. Which tool should I start with?
+## 4. Which tool should I start with?
 
 | Scenario | Recommended workflow |
 |---|---|
@@ -110,7 +155,7 @@ A configured value and an observed value may differ. Missing Grafana telemetry s
 
 ---
 
-## 4. Access requirements
+## 5. Access requirements
 
 | Tool | Access required | If you do not have access |
 |---|---|---|
@@ -118,28 +163,6 @@ A configured value and an observed value may differ. Missing Grafana telemetry s
 | **Tenant Investigator — Grafana** | Internal Grafana access and permission to query the relevant regional datasource | Contact your TAC SME or the appropriate internal access owner |
 
 Both tools use your existing authenticated browser session. They do not provide additional permissions.
-
----
-
-## 5. How to install or run
-
-Both tools are available from a single installation page.
-
-### [Open the Installer — index.html](index.html)
-
-1. Download the repository or its `index.html` installation page and open it in **Google Chrome**.
-2. Select **GitLab** or **Grafana**.
-3. Choose your preferred installation method:
-
-   | Method | Instructions |
-   |---|---|
-   | **Bookmark Install** | Drag the bookmark button from the installer to your Chrome bookmarks bar, then click it on the relevant authenticated page |
-   | **Direct JS** | Copy or download the JavaScript, then execute it from Chrome DevTools on the relevant authenticated page |
-   | **More Info** | Read the tool's features, limitations and additional instructions |
-
-4. Follow the selected tool's on-screen instructions.
-
-If your managed browser restricts bookmarklets, use an approved Direct JS method. Grafana's larger script may work more reliably through Direct JS.
 
 ---
 
